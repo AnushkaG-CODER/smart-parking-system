@@ -55,7 +55,6 @@ public:
     }
 
 
-    // Smart slot allocation
     void parkVehicle()
     {
         string vehicleNumber;
@@ -68,8 +67,6 @@ public:
         cin >> vehicleType;
 
 
-        // Check whether vehicle is already parked
-
         for(int i = 0; i < totalSlots; i++)
         {
             if(slots[i].occupied &&
@@ -80,8 +77,6 @@ public:
             }
         }
 
-
-        // Find first suitable empty slot
 
         for(int i = 0; i < totalSlots; i++)
         {
@@ -104,7 +99,6 @@ public:
     }
 
 
-    // Display all slots
     void displaySlots()
     {
         cout << "\n------ PARKING STATUS ------\n";
@@ -130,7 +124,6 @@ public:
     }
 
 
-    // Remove vehicle
     void removeVehicle()
     {
         string vehicleNumber;
@@ -159,7 +152,6 @@ public:
     }
 
 
-    // Search vehicle
     void searchVehicle()
     {
         string vehicleNumber;
@@ -191,7 +183,6 @@ public:
     }
 
 
-    // Calculate parking fee
     void calculateFee()
     {
         string vehicleNumber;
